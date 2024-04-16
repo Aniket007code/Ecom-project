@@ -250,3 +250,40 @@
   font-size: 0.8rem;
   margin-top: 0.3rem;
 }
+
+.products-sections{
+  width: 100%;
+  border: 1px solid red;
+}
+
+.product-container{
+  width: 80%;
+  margin: 2rem auto;
+  border: 1px solid blue;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* gap: 2rem; */
+}
+
+.cards{
+  border: 2px solid green;
+  width: 18rem;
+  /* display: flex; */
+  /* flex-direction: row; */
+}
+
+.category{
+  display: inline-block;
+  background-color: rgba(255, 192, 203, 0.856);
+  padding: 0.17rem;
+  margin: 0.7rem;
+  border-radius: 5px;
+}
+
+.product-img-container{
+  width: 15rem;
+  height: 10rem;
+  border: 1px solid red;
+  /* margin-left: ; */
+  margin: 1rem 1.3rem;
+}
