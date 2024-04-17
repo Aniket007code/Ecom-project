@@ -68,6 +68,11 @@
   text-align: center;
 }
 
+.hamburgar-menu{
+  list-style-type: none;
+  display: none;
+}
+
 .addtocartbtn {
   background-color: rgba(12, 12, 12, 0.801);
   color: white;
@@ -79,6 +84,7 @@
   padding: 0 0.1rem;
 }
 
+
 .hero-section {
   width: 100%;
   height: 83vh;
@@ -86,7 +92,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("./public/images/bg-img3.jfif");
+  background-color: rgb(0, 0, 0);
   background-image: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -143,7 +149,7 @@
 }
 
 .left-hero-heading {
-  color: rgb(21, 21, 54);
+  color: rgb(211, 211, 216);
 }
 
 .left-hero-para {
@@ -253,21 +259,27 @@
 
 .products-sections{
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .product-container{
   width: 80%;
   margin: 2rem auto;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  /* gap: 2rem; */
+  row-gap: 2.5rem;
+  place-items: center;
 }
 
+
 .cards{
-  border: 2px solid green;
+  /* border: 1px solid rgb(214, 211, 211); */
   width: 18rem;
+  padding-left: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 2rem;
+  /* padding-right: 1rem; */
   /* display: flex; */
   /* flex-direction: row; */
 }
@@ -276,14 +288,194 @@
   display: inline-block;
   background-color: rgba(255, 192, 203, 0.856);
   padding: 0.17rem;
-  margin: 0.7rem;
+  margin: 0.5rem 0.1rem;
   border-radius: 5px;
 }
 
 .product-img-container{
   width: 15rem;
   height: 10rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* margin-left: ; */
-  margin: 1rem 1.3rem;
+  margin: 1rem 0;
 }
+
+.product-img{
+  width: 100%;
+  height: 100%;
+}
+
+.product-name{
+  /* background-color: aqua; */
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.product-icons{
+  font-size: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-desc{
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  /* background-color: pink; */
+  max-width: 250px;
+
+}
+
+.product-price-container{
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+
+}
+
+.Actual-price{
+  text-decoration:line-through;
+}
+
+.available-stocks-container{
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.product-stocks{
+  margin-left: 1rem;
+}
+
+.qunatity-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+  margin-top: 1rem;
+}
+
+.product-button-container{
+  display: flex;
+  /* gap: 1rem; */
+  margin-right: 1.3rem;
+  /* border: 1px solid grey; */
+  border-radius: 3px;
+}
+
+.producttocartbtn{
+  background-color: rgba(12, 12, 12, 0.904);
+  color: white;
+  /* padding:  0.5rem 0; */
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  /* height: 23px; */
+  padding: 0.5rem 0.7rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.producttocartbtn:hover{
+  background-color: rgba(0, 0, 0, 0.945)
+      
+}
+
+.producttocartbtn i{
+  margin-right: 0.3rem;
+}
+
+.incrementBtn{
+  padding: 0.2rem 0.8rem;
+  background-color: transparent;
+  border: 0.1px solid rgb(167, 164, 164);
+  /* border-radius: 3px; */
+  cursor: pointer;
+  
+}
+
+.decrementBtn{
+  padding: 0.2rem 0.8rem;
+  background-color: transparent;
+  border: 1px solid rgb(167, 164, 164);
+  cursor: pointer;
+
+}
+
+.product-quantity{
+  border: 1px solid grey;
+  padding: 0.2rem 0.8rem;;
+  border-left: none;
+  border-right: none;
+}
+
+
+@media screen and (max-width : 1270px) {
+  .product-container{
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+  }
+}
+
+@media screen and (max-width : 870px) {
+  .product-container{
+    grid-template-columns: repeat(1,1fr);
+    place-items: center;
+  }
+
+  .policy-container{
+    grid-template-columns: repeat(2,1fr);
+
+  }
+
+  .top-header{
+    display: none;
+  }
+
+  .star-products-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+}
+
+@media screen and (max-width : 590px){
+  .policy-container{
+    grid-template-columns: repeat(1,1fr);
+    place-items: center;
+
+  }
+}
+
+@media screen and (max-width : 770px){
+  .nav-links{
+    display: none;
+  }
+
+  .hamburgar-menu{
+    display: block;
+  }
+
+  .hero-section-container{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .left-hero-section{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-hero-section{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .star-products-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+
+
+}
+

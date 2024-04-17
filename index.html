@@ -43,6 +43,8 @@
             </button></a
           >
         </div>
+        <li class="hamburgar-menu"><a href=""><i class="fas fa-solid fa-bars"></i></a></li>
+
       </div>
     </div>
 
@@ -63,7 +65,7 @@
         <div class="right-hero-section">
           <div class="right-hero-img-container">
             <img
-              src="./public/images/hero-electronic-img-removebg-preview.png"
+              src="./public/images/vision-pro-img.jpg"
               alt="product-collection"
               class="right-hero-img"
             />
@@ -207,54 +209,56 @@
 
         <!-- PRODUCTS TEMPLATE SECTION START -->
 
-    <template id="product-template">
-      <div class="cards" id="cardValue">
-        <article class="information [card]">
-          <span class="category"></span>
-          <div class="product-img-container">
-            <img src="" alt="" class="product-img" />
-          </div>
-          <h4 class="product-name"></h4>
-          <div class="product-icons">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p class="product-desc">
-            
-          </p>
-          <div class="product-price-container">
-            <span class="current-price">1000</span>
-            <span class="Actual-price">4000</span>
-          </div>
-          <p>Total stocks Available: <span class="product-stocks">40</span></p>
+        <template id="product-template">
+          <div class="cards" id="cardValue">
+            <article class="information [card]">
+              <span class="category"></span>
+              <div class="product-img-container">
+                <img src="" alt="" class="product-img" />
+              </div>
+              <h4 class="product-name"></h4>
+              <div class="product-icons">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="product-desc"></p>
+              <div class="product-price-container">
+                <span class="current-price">1000</span>
+                <span class="Actual-price">4000</span>
+              </div>
 
-          <div class="qunatity-container">
-            <p>Quantity(pieces)</p>
-            <div class="product-button-container">
-              <button class="incrementBtn">+</button>
-              <p class="product-quantity">1</p>
-              <button class="decrementBtn">-</button>
-            </div>
+              <div class="available-stocks-container">
+                <p>
+                  Total stocks Available: <span class="product-stocks">40</span>
+                </p>
+              </div>
+
+              <div class="qunatity-container">
+                <p>Quantity(pieces)</p>
+                <div class="product-button-container">
+                  <button class="incrementBtn">+</button>
+                  <p class="product-quantity">1</p>
+                  <button class="decrementBtn">-</button>
+                </div>
+              </div>
+
+              <button class="producttocartbtn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+            </article>
           </div>
+        </template>
 
-          <button><i class="fas fa-shopping-cart"></i> Add to Cart</button>
-        </article>
-      </div>
-    </template>
-
-    <!-- PRODUCTS TEMPLATE SECTION END -->
+        <!-- PRODUCTS TEMPLATE SECTION END -->
       </div>
     </div>
 
-    
-
-   
-
     <script type="module" src="main.js"></script>
-    <script src="https://kit.fontawesome.com/738e9daa07.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/738e9daa07.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- <script  src=""></script> -->
   </body>
 </html>

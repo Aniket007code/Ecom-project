@@ -16,7 +16,7 @@
     "brand": "TechGadget",
     "price": 499.99,
     "stock": 100,
-    "image": "./",
+    "image": "./public/images/smartphone-img.jpg",
     "description": "Feature-rich smartphone with a 6.2-inch screen, 12MP dual camera, 128GB storage, and a 4000mAh battery."
   },
   {
@@ -26,8 +26,38 @@
     "brand": "SoundBeats",
     "price": 149.99,
     "stock": 30,
-    "image": "../images/headphone.png",
+    "image": "./public/images//best-headphone-apple-2.jpg",
     "description": "High-quality wireless headphones with over-ear design, 20 hours of battery life, and a sleek black color."
+  },
+  {
+    "id": 4,
+    "name": "Watches",
+    "category": "Wearables",
+    "brand": "FitTech",
+    "price": 199.99,
+    "stock": 20,
+    "image": "./public/images/iwatch2-img.jpg",
+    "description": "Smartwatch with a 1.3-inch AMOLED display, water-resistant design, fitness tracking features, and a stylish silver color."
+  },
+  {
+    "id": 5,
+    "name": "Speakers",
+    "category": "Audio",
+    "brand": "SoundBeats",
+    "price": 149.99,
+    "stock": 30,
+    "image": "./public/images/speakers1.jpg",
+    "description": "High-quality wireless headphones with over-ear design, 20 hours of battery life, and a sleek black color."
+  },
+  {
+    "id": 6,
+    "name": "Television",
+    "category": "Video",
+    "brand": "Samsung",
+    "price": 199.99,
+    "stock": 20,
+    "image": "./public/images/itv.jpg",
+    "description": "Smartwatch with a 1.3-inch AMOLED display, water-resistant design, fitness tracking features, and a stylish silver color."
   }
  
 ]
