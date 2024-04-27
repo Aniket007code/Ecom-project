@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cartStyle.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -38,53 +40,82 @@
       </div>
     </div>
 
-
     <section class="addToCartElement">
-        <div class="addToCartElementContainer">
-            <section>
-                <div class="productCartContainer">
-
-                </div>
-            </section>
-
-        </div>
-        <div class="totalprice">
-            <div class="totalPriceMainWidth">
-                <div class="totalPriceContainer">
-                    <p>Selected Offer Summary</p>
-                    <div class="subTotalContainer">
-                        <p class="subTotalHeading">Sub Total</p>
-                        <p class="subTotalPrice">₹133.41</p>
-                    </div>
-    
-                    <div class="taxContainer">
-                        <p class="taxHeading">Tax :</p>
-                        <p class="taxPrice">50 ₹</p>
-                    </div>
-    
-                    <div class="mainTotalPriceContainer">
-                        <p class="finalTotalHeading">Final Total :</p>
-                        <p class="finalTotalPrice">₹ 1148.99</p>
-                    </div>
-                </div>
-
+      <div class="addToCartElementContainer">
+        <section>
+          <div class="productCartContainer"></div>
+        </section>
+      </div>
+      <div class="totalprice">
+        <div class="totalPriceMainWidth">
+          <div class="totalPriceContainer">
+            <p>Selected Offer Summary</p>
+            <div class="subTotalContainer">
+              <p class="subTotalHeading">Sub Total</p>
+              <p class="subTotalPrice"></p>
             </div>
-          
+
+            <div class="taxContainer">
+              <p class="taxHeading">Tax :</p>
+              <p class="taxPrice">50 ₹</p>
+            </div>
+
+            <div class="mainTotalPriceContainer">
+              <p class="finalTotalHeading">Final Total :</p>
+              <p class="finalTotalPrice">₹ 1148.99</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
+    <template id="product-cart-template">
+      <div class="cardCarts" id="cardValue">
+        <article class="information [card]">
+          <div class="cartCardContainer">
+            <span class="category"></span>
+            <div class="product-img-container-cart">
+              <img src="" alt="" class="product-img-cart" />
+            </div>
+            <h4 class="product-name"></h4>
+            <!-- <div class="product-icons">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div> -->
+            <!-- <p class="product-desc"></p>
+          <div class="product-price-container">
+            <span class="current-price">1000</span>
+            <span class="Actual-price">4000</span>
+          </div> -->
 
+            <p class="productPrice"></p>
 
+            <!-- <div class="available-stocks-container">
+            <p>
+              Total stocks Available: <span class="product-stocks"></span>
+            </p>
+          </div> -->
 
+            <div class="product-button-container">
+              <button class="incrementBtn">+</button>
+              <p class="product-quantity">1</p>
+              <button class="decrementBtn">-</button>
+            </div>
 
+            <button class="producttocartbtn removeToCartBtn">Remove</button>
+          </div>
+        </article>
+      </div>
+    </template>
 
-
-
-
-    <script type="module" src="main.js"></script>
     <script
       src="https://kit.fontawesome.com/738e9daa07.js"
       crossorigin="anonymous"
     ></script>
+
+    <script type="module" src="showAddToCart.js"></script>
   </body>
 </html>

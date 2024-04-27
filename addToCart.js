@@ -1,4 +1,5 @@
 import { getCartProductFromLS } from "./getCartProductLS.js";
+import { showToast } from "./showToast.js";
 import { updateCartValue } from "./updateCartValue.js";
 
 getCartProductFromLS();
@@ -31,11 +32,14 @@ export const addToCart = (event, id, stock) => {
       } else {
         return curProd; // Return the original product
       }
+
     });
 
     console.log(updatedProducts);
 
     localStorage.setItem("cartProductLS", JSON.stringify(updatedProducts));
+    showToast("delete", id)
+
   }
 
   if (existingProd) {
@@ -53,6 +57,9 @@ export const addToCart = (event, id, stock) => {
   localStorage.setItem("cartProductLS", JSON.stringify(arrLocalStorageProduct));
 
   updateCartValue(arrLocalStorageProduct);
+
+  showToast("add", id)
+
 
   //  let price = document.querySelector(".")
 };
