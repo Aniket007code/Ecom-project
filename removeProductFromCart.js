@@ -4,7 +4,7 @@ import { updateCartProductTotal } from "./updateCartProductTotal.js";
 import { updateCartValue } from "./updateCartValue.js";
 
 export const removeProductFromCart = (id) => {
-  console.log("remove product" + id);
+  // console.log("remove product" + id);
 
   let cartProducts = getCartProductFromLS();
 

@@ -414,7 +414,7 @@
 
 .totalPriceMainWidth {
   width: 80%;
-  margin: 0 auto;
+  margin: 2rem auto;
   /* border: 1px solid green; */
   display: flex;
   justify-content: end;
