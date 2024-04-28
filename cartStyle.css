@@ -4,6 +4,10 @@
    box-sizing: border-box;
 }
 
+/* body{
+    overflow: scroll;
+} */
+
 .productCartFullWidth1{
     width: 100%;
    
@@ -55,3 +59,17 @@
 /* .cards{
     border: 2px solid green;
 } */
+
+
+@media (max-width:800px) {
+    .product-img-container-cart{
+        /* display: none; */
+        width: 100px;
+        height: 100px;
+    }
+    .cartCardContainer{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+}
